@@ -1,7 +1,5 @@
-task.spawn(function() --Skyyyyyyyyyyyyyyy i dont know if this will work :<
-	game.Players.LocalPlayer.AttributeChanged:Connect(function(Attribute)
-		if Attribute == "Muted" then
-			game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
-		end
+task.spawn(function() --i think this will work! ;)
+	game.Players.LocalPlayer.AttributeChanged:Connect(function()
+		game.Players.LocalPlayer:SetAttribute("Muted", false)
 	end)
 end)

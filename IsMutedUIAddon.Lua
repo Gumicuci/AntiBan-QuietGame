@@ -32,12 +32,10 @@ Text.TextXAlignment = Enum.TextXAlignment.Left
 Text.ZIndex = 1
 Text.AnchorPoint = Vector2.new(0, 0.5)
 game.Players.LocalPlayer.AttributeChanged:Connect(function()
-	if game.Players.LocalPlayer:GetAttribute("Muted") == true then
-		if game.Players.LocalPlayer:GetAttribute("MuteTimer") > 0 then
-			Mutedframe.Visible = true
-			Text.Text = game.Players.LocalPlayer:GetAttribute("MuteTimer")
-		else
-			Mutedframe.Visible = false
-		end
+	if game.Players.LocalPlayer:GetAttribute("MuteTimer") > 0 then
+		Mutedframe.Visible = true
+		Text.Text = game.Players.LocalPlayer:GetAttribute("MuteTimer")
+	else
+		Mutedframe.Visible = false
 	end
 end)

@@ -8,6 +8,7 @@ Mutedframe.Size = UDim2.new(0, 80, 0, 25)
 Mutedframe.Position = UDim2.new(0, 0, 0, 0)
 Mutedframe.ZIndex = 1
 Mutedframe.LayoutOrder = -1
+Mutedframe.Visible = false
 
 local Corner = Instance.new("UICorner", Mutedframe)
 Corner.CornerRadius = UDim.new(0, 6)
